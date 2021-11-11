@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Intro Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: purple;
+  color: green;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa; 
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Introduction</h1>
+  <h3>A blog created by TRUCK-Kun.</h3>
+</div>
+
+<div class="navbar">
+  <a href="https://www.facebook.com/profile.php?id=100054139228975">FaceBook</a>
+  <a href="https://www.instagram.com/im_sleepy.t/">Instagram</a>
+  <a href="https://docs.google.com/forms/d/12znUYEGXGZv4n2bDxLf7qv25oVww9BX0uwKZJsMmxo8/edit" class="right">Cổng góp ý</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Một chút về mình</h2>
+    <h5>Hình ảnh về mình:</h5>
+    <div>
+		<img src="avt.jpg" alt="Phạm Thành Trung" width="230" height="230">
+    <img src="Trung.jpg" alt="Phạm Thành Trung" width="230" height="230">
+	  </div>
+    <p>Mình là Trung, Mình hiện đang là sinh viên năm nhất khoa Toán - Tin học, trường Đại học Khoa học tự nhiên - ĐHQG Hồ Chí Minh. Mình có đam mê với công nghệ từ bé, theo đuổi lập trình thi đấu (competition programming) từ năm lớp 8 cho tới bây giờ.</p>
+    <h3>Thông Tin cá nhân</h3>
+    <ul>
+      <li>Cựu bí thư lớp 12A6 niên khóa 18-21, trường THPT Dĩ An.</li>
+      <li>Sinh nhật ngày 01/12/2003.</li>
+      <li>Sở thích là viết code và đọc tản văn.</li>
+      <li>Quê quán: Vụ Bản - Nam Định.</li>
+      <li>Nơi ở hiện tại: Dĩ An - Bình Dương.</li>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>TIỂU SỬ TRUNG HỌC PHỔ THÔNG</h2>
+    <h4>Tiếp sức mùa thi THPT Quốc Gia 2020 Aug 10, 2020</h4>
+    <div>
+		<img src="back.jpg" alt="Phạm Thành Trung" width="300" height="200">
+	</div>
+    <p>Lần đầu đi nguyện viên</p>
+    <p>1 lần được trở thành người tiếp động lực cho các anh chị trong kỳ thi quyết định một phần tương lai giữa thời điểm dịch bệnh đang căng thẳng</p>
+    <h4>Quán quân RPGCOM mùa đầu tiên Dec 20, 2020</h4>
+    <div>
+      <img src="rpg.jpg" alt="RPGCOM" width="300" height="230">
+      <img src="rpg1.jpg" alt="RPGCOM" width="300" height="230">
+      <img src="rpg4.jpg" alt="RPGCOM" width="300" height="230">
+      <img src="rpg5.jpg" alt="RPGCOM" width="300" height="230">
+    </div>
+    <p><a>DAS Outsider</a> được thành lập..</p>
+    <p>Khởi đầu cho sự kiện thành lập team DAS chính từ đội tuyển HSG tin của trường qua mùa giải tin học trẻ tỉnh Bình Dương đạt giải và góp mặt vào vòng loại khu vực đi thi vòng quốc gia. Và tên đội được chọn với ý nghĩa là đội vẫn sẽ tiếp tục duy trì và tồn tại dưới danh nghĩa những cựu học sinh của THPT Dĩ An</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Đây là bản demo mong người đọc có thể góp ý để cải thiện tốt hơn bằng cách bấm vào ô đặt câu hỏi bên góc phải</h2>
+</div>
+
+</body>
+</html>
